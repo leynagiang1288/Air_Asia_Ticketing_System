@@ -1,0 +1,31 @@
+airport_name,city,country
+JFK,New York,USA
+LAX,Los Angeles,USA
+ORD,Chicago,USA
+DFW,Dallas,USA
+DEN,Denver,USA
+SFO,San Francisco,USA
+SEA,Seattle,USA
+MIA,Miami,USA
+ATL,Atlanta,USA
+BOS,Boston,USA
+CLT,Charlotte,USA
+PHX,Phoenix,USA
+IAH,Houston,USA
+LAS,Las Vegas,USA
+MCO,Orlando,USA
+EWR,Newark,USA
+MSP,Minneapolis,USA
+DTW,Detroit,USA
+PHL,Philadelphia,USA
+LGA,New York,USA
+FLL,Fort Lauderdale,USA
+BWI,Baltimore,USA
+SLC,Salt Lake City,USA
+SAN,San Diego,USA
+IAD,Washington,USA
+DCA,Washington,USA
+MDW,Chicago,USA
+HOU,Houston,USA
+DAL,Dallas,USA
+BNA,Nashville,USA
