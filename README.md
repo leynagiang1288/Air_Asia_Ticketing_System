@@ -9,3 +9,9 @@ Pending actions:
 5.	Project documentation
 6.	PPT if necessary.
 
+-----------------------------------
+
+Leyna - Customer menu and actions
+Sunita - Crud for flights,employee, employee user actions and menu
+Roja - User authentication -> new user/Existing User, Crud for tickets, admin user acyions and menu
+
