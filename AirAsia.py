@@ -2,7 +2,7 @@ import DBBase as airDB #Used to import the Database class
 
 class AirAsiaDatabase(airDB.DBBase):
     def __init__(self):
-        super().__init__("Air_Asia_Database.sqlite") #Creates the database in SQLite
+        super().__init__("airasiadb.sqlite") #Creates the database in SQLite
 
     def reset_database(self): #This section will create the actual tables in our database
         try:
@@ -21,11 +21,14 @@ class AirAsiaDatabase(airDB.DBBase):
                     last_name TEXT NOT NULL, 
                     dob DATE NOT NULL, 
                     citizenship TEXT NOT NULL, 
-                    email TEXT 
+                    email TEXT,
+                    username VARCHAR(128) NOT NULL UNIQUE,
+                    password BINARY NOT NULL
                 );
             
                 CREATE TABLE Airport(
                     airport_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
+                    airport_code TEXT NOT NULL UNIQUE,
                     airport_name TEXT NOT NULL, 
                     city TEXT NOT NULL, 
                     country TEXT NOT NULL 
@@ -33,14 +36,14 @@ class AirAsiaDatabase(airDB.DBBase):
             
                 CREATE TABLE Flight ( 
                     flight_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
-                    airport_id INTEGER NOT NULL,
-                    destination TEXT NOT NULL, 
+                    airportFrom VARCHAR(128) NOT NULL,
+                    airportTo VARCHAR(128) NOT NULL, 
+                    aircraftType TEXT NOT NULL,
                     departure_date DATE NOT NULL, 
                     time TEXT NOT NULL, 
                     departure_gate TEXT NOT NULL,
                     arrival_gate TEXT NOT NULL, 
-                    duration_in_hrs REAL NOT NULL, 
-                    FOREIGN KEY (airport_id) REFERENCES Airport (airport_id) 
+                    duration_in_hrs REAL NOT NULL
                 );
             
                 CREATE TABLE Ticket (
@@ -59,6 +62,8 @@ class AirAsiaDatabase(airDB.DBBase):
                     last_name TEXT NOT NULL, 
                     job_title TEXT NOT NULL,
                     flight_id INTEGER NOT NULL, 
+                    username VARCHAR(128) NOT NULL UNIQUE,
+                    password BINARY NOT NULL,
                     FOREIGN KEY (flight_id) REFERENCES Flight (flight_id)  
                 );
             """
@@ -68,12 +73,6 @@ class AirAsiaDatabase(airDB.DBBase):
             print("Something went wrong, the specific error is:", e) #This statement here indicates that there was an error creating the database
         finally:
             super().close_db() #This statement right here will make it so we follow best practices and close our database
-
-#CRUD CODE GOES HERE
-
-#CODE TO TEST AND GENERATE DATABASE
-#Air_Asia = AirAsiaDatabase()
-#Air_Asia.reset_database()
 
 
 

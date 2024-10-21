@@ -1,30 +1,31 @@
-first_name,last_name,job_title,flight_id
-Emily,Davis,Pilot,1
-Michael,Wilson,Co-pilot,1
-Jessica,Garcia,Flight Attendant,1
-Ashley,Rodriguez,Pilot,2
-Kevin,Williams,Co-pilot,2
-Amanda,Anderson,Flight Attendant,2
-Justin,Thomas,Pilot,3
-Melissa,Jackson,Co-pilot,3
-Stephanie,White,Flight Attendant,3
-Jason,Harris,Pilot,4
-Deborah,Martin,Co-pilot,4
-Timothy,Thompson,Flight Attendant,4
-Rebecca,Perez,Pilot,5
-Jeffrey,Clark,Co-pilot,5
-Ryan,Lewis,Flight Attendant,5
-John,Robinson,Pilot,6
-Jane,Walker,Co-pilot,6
-Robert,Hall,Flight Attendant,6
-Mary,Allen,Pilot,7
-Michael,Young,Co-pilot,7
-Jennifer,Hernandez,Flight Attendant,7
-David,King,Pilot,8
-Linda,Wright,Co-pilot,8
-Christopher,Lopez,Flight Attendant,8
-Barbara,Hill,Pilot,9
-Daniel,Doe,Co-pilot,9
-Sarah,Smith,Flight Attendant,9
-Anthony,Jones,Pilot,10
-Jessica,Brown,Co-pilot,10
+first_name,last_name,job_title,flight_id,username,password
+Emily,Davis,Pilot,1,emilydavis,password123
+Michael,Wilson,Co-pilot,1,michaelwilson,password123
+Jessica,Garcia,Flight Attendant,1,jessicagarcia,password123
+Ashley,Rodriguez,Pilot,2,ashleyrodriguez,password123
+Kevin,Williams,Co-pilot,2,kevinwilliams,password123
+Amanda,Anderson,Flight Attendant,2,amandaanderson,password123
+Justin,Thomas,Pilot,3,justinthomas,password123
+Melissa,Jackson,Co-pilot,3,melissajackson,password123
+Stephanie,White,Flight Attendant,3,stephaniewhite,password123
+Jason,Harris,Pilot,4,jasonharris,password123
+Deborah,Martin,Co-pilot,4,deborahmartin,password123
+Timothy,Thompson,Flight Attendant,4,timothythompson,password123
+Rebecca,Perez,Pilot,5,rebeccaperez,password123
+Jeffrey,Clark,Co-pilot,5,jeffreyclark,password123
+Ryan,Lewis,Flight Attendant,5,ryanlewis,password123
+John,Robinson,Pilot,6,johnrobinson,password123
+Jane,Walker,Co-pilot,6,janewalker,password123
+Robert,Hall,Flight Attendant,6,roberthall,password123
+Mary,Allen,Pilot,7,maryallen,password123
+Michael,Young,Co-pilot,7,michaelyoung,password123
+Jennifer,Hernandez,Flight Attendant,7,jenniferhernandez,password123
+David,King,Pilot,8,davidking,password123
+Linda,Wright,Co-pilot,8,lindawright,password123
+Christopher,Lopez,Flight Attendant,8,christopherlopez,password123
+Barbara,Hill,Pilot,9,barbarahill,password123
+Daniel,Doe,Co-pilot,9,danieldoe,password123
+Sarah,Smith,Flight Attendant,9,sarahsmith,password123
+Anthony,Jones,Pilot,10,anthonyjones,password123
+Jessica,Brown,Co-pilot,10,jessicabrown,password123
+Andrew,Clark,Flight Attendant,10,andrewclark,password123

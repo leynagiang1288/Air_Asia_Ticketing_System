@@ -1,0 +1,33 @@
+employee_id,employee_first_name,employee_last_name,job_title,flight_id,airportTo,departure_date,time
+1,Emily,Davis,Pilot,1,LAX,2024-03-15,08:30
+2,Michael,Wilson,Co-pilot,1,LAX,2024-03-15,08:30
+3,Jessica,Garcia,Flight Attendant,1,LAX,2024-03-15,08:30
+31,Roja,Chekuri,admin,1,LAX,2024-03-15,08:30
+32,test,test,att,1,LAX,2024-03-15,08:30
+4,Ashley,Rodriguez,Pilot,2,CDG,2024-03-16,10:15
+5,Kevin,Williams,Co-pilot,2,CDG,2024-03-16,10:15
+6,Amanda,Anderson,Flight Attendant,2,CDG,2024-03-16,10:15
+7,Justin,Thomas,Pilot,3,SEA,2024-03-17,12:45
+8,Melissa,Jackson,Co-pilot,3,SEA,2024-03-17,12:45
+9,Stephanie,White,Flight Attendant,3,SEA,2024-03-17,12:45
+10,Jason,Harris,Pilot,4,SIN,2024-03-18,23:00
+11,Deborah,Martin,Co-pilot,4,SIN,2024-03-18,23:00
+12,Timothy,Thompson,Flight Attendant,4,SIN,2024-03-18,23:00
+13,Rebecca,Perez,Pilot,5,ICN,2024-03-19,14:20
+14,Jeffrey,Clark,Co-pilot,5,ICN,2024-03-19,14:20
+15,Ryan,Lewis,Flight Attendant,5,ICN,2024-03-19,14:20
+16,John,Robinson,Pilot,6,IST,2024-03-20,16:50
+17,Jane,Walker,Co-pilot,6,IST,2024-03-20,16:50
+18,Robert,Hall,Flight Attendant,6,IST,2024-03-20,16:50
+19,Mary,Allen,Pilot,7,BCN,2024-03-21,07:40
+20,Michael,Young,Co-pilot,7,BCN,2024-03-21,07:40
+21,Jennifer,Hernandez,Flight Attendant,7,BCN,2024-03-21,07:40
+22,David,King,Pilot,8,MEL,2024-03-22,09:10
+23,Linda,Wright,Co-pilot,8,MEL,2024-03-22,09:10
+24,Christopher,Lopez,Flight Attendant,8,MEL,2024-03-22,09:10
+25,Barbara,Hill,Pilot,9,MIA,2024-03-23,11:30
+26,Daniel,Doe,Co-pilot,9,MIA,2024-03-23,11:30
+27,Sarah,Smith,Flight Attendant,9,MIA,2024-03-23,11:30
+28,Anthony,Jones,Pilot,10,FCO,2024-03-24,13:55
+29,Jessica,Brown,Co-pilot,10,FCO,2024-03-24,13:55
+30,Andrew,Clark,Flight Attendant,10,FCO,2024-03-24,13:55
