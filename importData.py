@@ -20,3 +20,12 @@ airlineRun.updateAirportWithCSV()
 airport = Airport()
 for airport in airport.getAllAirports():
     print(airport)
+
+print("Ticket file input:")
+airlineRun.updateTicketWithCSV()
+
+# printing all airports
+ticket = Ticket()
+for ticket in ticket.getAllTickets():
+    print(ticket)
+

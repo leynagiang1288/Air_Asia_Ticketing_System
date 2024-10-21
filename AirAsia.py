@@ -2,7 +2,7 @@ import DBBase as airDB #Used to import the Database class
 
 class AirAsiaDatabase(airDB.DBBase):
     def __init__(self):
-        super().__init__("Air_Asia_Database.sqlite") #Creates the database in SQLite
+        super().__init__("airasiadb.sqlite") #Creates the database in SQLite
 
     def reset_database(self): #This section will create the actual tables in our database
         try:
@@ -21,7 +21,9 @@ class AirAsiaDatabase(airDB.DBBase):
                     last_name TEXT NOT NULL, 
                     dob DATE NOT NULL, 
                     citizenship TEXT NOT NULL, 
-                    email TEXT 
+                    email TEXT,
+                    username VARCHAR(128) NOT NULL UNIQUE,
+                    password BINARY NOT NULL
                 );
             
                 CREATE TABLE Airport(
@@ -59,6 +61,8 @@ class AirAsiaDatabase(airDB.DBBase):
                     last_name TEXT NOT NULL, 
                     job_title TEXT NOT NULL,
                     flight_id INTEGER NOT NULL, 
+                    username VARCHAR(128) NOT NULL UNIQUE,
+                    password BINARY NOT NULL,
                     FOREIGN KEY (flight_id) REFERENCES Flight (flight_id)  
                 );
             """

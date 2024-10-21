@@ -19,35 +19,19 @@ class CsvToDB:
         except Exception as e:
             print("Error while reading the CSV file:", e)
             return None
+        
     def writeToDB(self, df):
         try:
-            if not isinstance(df, pd.DataFrame):
-                print("Error: df is not a pandas DataFrame")
-                return
-            
             conn = sqlite3.connect(self.db_file)
-            cursor = conn.cursor()
-            
-            # Get the column names from the DataFrame
-            columns = ', '.join(df.columns)
-            
-            # Create the placeholders for the SQL query
-            placeholders = ', '.join(['?' for _ in df.columns])
-            
-            # Create the INSERT query
-            query = f"INSERT INTO {self.table_name} ({columns}) VALUES ({placeholders})"
-            
-            # Execute the query for each row in the DataFrame
-            for _, row in df.iterrows():
-                cursor.execute(query, tuple(row))
-            
-            conn.commit()
+            df.to_sql(self.table_name, conn, if_exists='append', index=False)
             conn.close()
             print(f"The CSV file has been successfully written to the '{self.table_name}' table in the '{self.db_file}' database.")
-        except sqlite3.Error as e:
+
+        except sqlite3.OperationalError as e:
             print("An error occurred while writing to the SQLite database:", e)
+
         except Exception as e:
-            print("An unexpected error occurred:", e)
+            print("An error occurred while writing to the SQLite database:", e)
 
     def run(self):
         df = self.readCSVFile()
@@ -75,42 +59,42 @@ class DbToCSV:
         finally:
             conn.close()
 
-# class CsvToDBWithEncryption:
-#     def __init__(self, csv_file, db_file, table_name, password):
-#         self.csv_file = csv_file
-#         self.db_file = db_file
-#         self.table_name = table_name
-#         self.password = password
+class CsvToDBWithEncryption:
+    def __init__(self, csv_file, db_file, table_name, password):
+        self.csv_file = csv_file
+        self.db_file = db_file
+        self.table_name = table_name
+        self.password = password
 
-#     def readCSV(self):
-#         try:
-#             df = pd.read_csv(self.csv_file)
-#             return df
-#         except FileNotFoundError:
-#             print("CSV File not found.")
-#             return None
-#         except Exception as e:
-#             print("Error while reading the CSV file:", e)
-#             return None
+    def readCSV(self):
+        try:
+            df = pd.read_csv(self.csv_file)
+            return df
+        except FileNotFoundError:
+            print("CSV File not found.")
+            return None
+        except Exception as e:
+            print("Error while reading the CSV file:", e)
+            return None
 
-#     def writeToDB(self, df):
-#         try:
-#             conn = sqlite3.connect(self.db_file)
-#             df[f'{self.password}'] = [bcrypt.hashpw(str(val).encode(), bcrypt.gensalt()).decode() for val in df[f'{self.password}']]
-#             df.to_sql(self.table_name, conn, if_exists='append', index=False)
-#             conn.close()
-#             print(f"The CSV file has been successfully written to the '{self.table_name}' table in the '{self.db_file}' database.")
+    def writeToDB(self, df):
+        try:
+            conn = sqlite3.connect(self.db_file)
+            df[f'{self.password}'] = [bcrypt.hashpw(str(val).encode(), bcrypt.gensalt()).decode() for val in df[f'{self.password}']]
+            df.to_sql(self.table_name, conn, if_exists='append', index=False)
+            conn.close()
+            print(f"The CSV file has been successfully written to the '{self.table_name}' table in the '{self.db_file}' database.")
 
-#         except sqlite3.OperationalError as e:
-#             print("An error occurred while writing to the SQLite database:", e)
+        except sqlite3.OperationalError as e:
+            print("An error occurred while writing to the SQLite database:", e)
 
-#         except Exception as e:
-#             print("An error occurred while writing to the SQLite database:", e)
+        except Exception as e:
+            print("An error occurred while writing to the SQLite database:", e)
 
-#     def run(self):
-#         df = self.readCSV()
-#         if df is not None:
-#             self.writeToDB(df)
+    def run(self):
+        df = self.readCSV()
+        if df is not None:
+            self.writeToDB(df)
 
 # test = CsvToSQLite("test.csv", "fileIOTest.sqlite", "first_table")
 # test.readCSV()
