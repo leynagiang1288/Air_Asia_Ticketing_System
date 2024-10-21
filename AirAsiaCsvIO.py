@@ -1,6 +1,5 @@
 import pandas as pd # type: ignore
 import sqlite3
-import bcrypt
 
 class CsvToDB:
     def __init__(self, csv_file, db_file, table_name):
