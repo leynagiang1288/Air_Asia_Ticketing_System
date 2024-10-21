@@ -1,31 +1,31 @@
-airport_name,city,country
-JFK,New York,USA
-LAX,Los Angeles,USA
-ORD,Chicago,USA
-DFW,Dallas,USA
-DEN,Denver,USA
-SFO,San Francisco,USA
-SEA,Seattle,USA
-MIA,Miami,USA
-ATL,Atlanta,USA
-BOS,Boston,USA
-CLT,Charlotte,USA
-PHX,Phoenix,USA
-IAH,Houston,USA
-LAS,Las Vegas,USA
-MCO,Orlando,USA
-EWR,Newark,USA
-MSP,Minneapolis,USA
-DTW,Detroit,USA
-PHL,Philadelphia,USA
-LGA,New York,USA
-FLL,Fort Lauderdale,USA
-BWI,Baltimore,USA
-SLC,Salt Lake City,USA
-SAN,San Diego,USA
-IAD,Washington,USA
-DCA,Washington,USA
-MDW,Chicago,USA
-HOU,Houston,USA
-DAL,Dallas,USA
-BNA,Nashville,USA
+airport_code,airport_name,city,country
+JFK,John F. Kennedy International Airport,New York City,United States
+LHR,London Heathrow Airport,London,United Kingdom
+CDG,Charles de Gaulle Airport,Paris,France
+HND,Tokyo Haneda Airport,Tokyo,Japan
+DXB,Dubai International Airport,Dubai,United Arab Emirates
+LAX,Los Angeles International Airport,Los Angeles,United States
+FRA,Frankfurt Airport,Frankfurt,Germany
+HKG,Hong Kong International Airport,Hong Kong,China
+AMS,Amsterdam Airport Schiphol,Amsterdam,Netherlands
+SIN,Singapore Changi Airport,Singapore,Singapore
+ICN,Incheon International Airport,Seoul,South Korea
+MAD,Adolfo Suárez Madrid–Barajas Airport,Madrid,Spain
+SYD,Sydney Airport,Sydney,Australia
+MUC,Munich Airport,Munich,Germany
+YYZ,Toronto Pearson International Airport,Toronto,Canada
+BCN,Barcelona–El Prat Airport,Barcelona,Spain
+IST,Istanbul Airport,Istanbul,Turkey
+FCO,Leonardo da Vinci International Airport,Rome,Italy
+BKK,Suvarnabhumi Airport,Bangkok,Thailand
+MEX,Mexico City International Airport,Mexico City,Mexico
+DEL,Indira Gandhi International Airport,New Delhi,India
+SFO,San Francisco International Airport,San Francisco,United States
+MIA,Miami International Airport,Miami,United States
+ORD,O'Hare International Airport,Chicago,United States
+ZRH,Zurich Airport,Zurich,Switzerland
+CPH,Copenhagen Airport,Copenhagen,Denmark
+DUB,Dublin Airport,Dublin,Ireland
+VIE,Vienna International Airport,Vienna,Austria
+OSL,Oslo Airport,Oslo,Norway
+GRU,São Paulo/Guarulhos International Airport,São Paulo,Brazil

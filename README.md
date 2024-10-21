@@ -10,10 +10,17 @@ Pending actions:
 6.	PPT if necessary.
 
 -----------------------------------
+TBD : 
 
 Leyna - Customer menu and actions
 Sunita - Crud for flights,employee, employee user actions and menu
 Roja - User authentication -> new user/Existing User, Crud for tickets, admin user actions and menu
+
+Pending items :
+
+Leyna : Customer menu and actions
+Sunita : employee user actions and menu
+Roja : admin actions for search flights and tickets
 
 ------------------------------------
 
@@ -62,11 +69,11 @@ Customers
 Employees (including administrators, who are also classified as employees)
 To set up and run this project, follow these steps:
 
-Step 1: Execute importData.py
+Step 1: Execute importData.py - This file will import all mock data csv files into sqllite database tables.
 Important: This file should only be run once at the beginning of the setup process. Running it multiple times will overwrite existing data.
 
 Step 2: Run index.py
-This file initiates the user authentication process. You'll be presented with a login screen:
+This file initiates the user authentication process. You'll be presented with below login screen:
 
 Welcome to Airline Ticketing System
 Please enter a number to proceed:

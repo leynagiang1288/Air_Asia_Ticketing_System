@@ -1,7 +1,7 @@
 from airline_main import *
 
 airline = AirAsiaDatabase()
-# airline.reset_database()
+airline.reset_database()
 
 airlineRun = AirlineMain()
 
@@ -24,7 +24,7 @@ for airport in airport.getAllAirports():
 print("Ticket file input:")
 airlineRun.updateTicketWithCSV()
 
-# printing all airports
+# printing all tickets
 ticket = Ticket()
 for ticket in ticket.getAllTickets():
     print(ticket)

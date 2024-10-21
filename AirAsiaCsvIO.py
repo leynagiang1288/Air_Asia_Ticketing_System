@@ -1,3 +1,7 @@
+#This file will run import fucntions to import csv data to the database tables and vice-versa. Password hashing is also implemented to store the passsword in bytes 
+# for customer and employee tables.
+
+import bcrypt
 import pandas as pd # type: ignore
 import sqlite3
 
@@ -94,10 +98,3 @@ class CsvToDBWithEncryption:
         df = self.readCSV()
         if df is not None:
             self.writeToDB(df)
-
-# test = CsvToSQLite("test.csv", "fileIOTest.sqlite", "first_table")
-# test.readCSV()
-# test.writeToDB("lasalDF")
-# test.run()
-# test2 = DbToCSV("fileIOTest.sqlite", "SELECT * from first_table", "test2_output.csv")
-# test2.writeToCsv()
